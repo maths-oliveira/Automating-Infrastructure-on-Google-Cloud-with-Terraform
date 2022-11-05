@@ -1,0 +1,19 @@
+touch main.tf
+touch variables.tf
+mkdir modules
+mkdir modules/instances
+touch modules/instances/instances.tf
+touch modules/instances/outputs.tf
+touch modules/instances/variables.tf
+
+mkdir storage
+touch storage/storage.tf
+touch storage/outputs.tf
+touch storage/variables.tf
+
+
+terraform import module.instances-module.google_compute_instance.tf-instance-1 XXXXXXXXX
+
+
+terraform import module.instances-module.google_compute_instance.tf-instance-2 YYYYYYYYY
+
